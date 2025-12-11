@@ -1,5 +1,16 @@
+:root {
+    --color1: #012326;
+    --color2: #044040;
+    --color3: #449CA6;
+    --color4: #400101;
+    --color5: #A0D9D9;
+    --color6: #F2F2F2;
+    --color7: #A60303;
+    --color8: #292929;
+}
+
 body {
-    background-color: #012326;
+    background-color: var(--color1);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,20 +18,20 @@ body {
     align-items: top;
     justify-content: center;
     margin: 0 auto;
-    border: 3px solid #044040;
+    border: 3px solid var(--color2);
     border-radius: 23px;
     width: 450px;
     height: 650px;
-    background-color: #449CA6;
+    background-color: var(--color3);
 }
 
 .titleCalc {
-    background-color: #400101;
-    color: #F2F2F2;
+    background-color: var(--color4);
+    color: var(--color6);
     display: flex;
     justify-content: center;
     padding: 10px;
-    border: 2.5px solid #044040;
+    border: 2.5px solid var(--color2);
     width: 300px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +42,7 @@ body {
 .screen {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid var(--color8);
     border-radius: 12px;
     width: 400px;
     height: 60px;
@@ -54,7 +65,7 @@ body {
 .buttons,
 .buttonsTogether,
 .buttonsOp {
-    background-color: #A0D9D9;
+    background-color: var(--color5);
     font-size: 1.45em;
     width: 85px;
     height: 60px;
@@ -62,12 +73,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #044040;
+    border: 2px solid var(--color2);
     border-radius: 12px;
 }
 
 .buttonsOp {
-    color: #A60303;
+    color: var(--color7);
     font-weight: bold;
 }
 
@@ -75,17 +86,17 @@ body {
     margin: 5px auto;
     width: 95%;
     grid-column: span 3;
-    color: #A60303;
+    color: var(--color7);
     font-weight: bold;
 
 }
 
 .operation,
 .equal {
-    color: rgb(240, 248, 255);
+    color: var(--color6);
 }
 
 .n1,
 .n2 {
-    color: #292929
+    color: var(--color8)
 }
