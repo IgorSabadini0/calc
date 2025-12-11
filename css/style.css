@@ -52,7 +52,10 @@ body {
 .itensScreen {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.45em;
-    margin: auto 10px;
+    margin: 0 auto;
+    width: 80%;
+    border-style: none;
+    background-color: transparent;
 }
 
 .gridButtons {

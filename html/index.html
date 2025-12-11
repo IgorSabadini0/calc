@@ -12,36 +12,36 @@
     <div class="bodyCalc">
         <h1 class="titleCalc">Calculadora</h1>
         <div class="screen">
-            <div class="itensScreen">
-                <span class="n1">1</span>
-                <span class="operation">+</span>
-                <span class="n2">2</span>
-                <span class="equal">=</span>
-                <span class="result">3</span>
-            </div>
+            <input type="text" class="itensScreen" id="itensScreen">
         </div>
         <div class="gridButtons">
-            <div class="buttons">7</div>
-            <div class="buttons">8</div>
-            <div class="buttons">9</div>
-            <div class="buttonsOp">&#9003;</div>
-            <div class="buttons">4</div>
-            <div class="buttons">5</div>
-            <div class="buttons">6</div>
-            <div class="buttonsOp">&divide;</div>
-            <div class="buttons">1</div>
-            <div class="buttons">2</div>
-            <div class="buttons">3</div>
-            <div class="buttonsOp">&times;</div>
-            <div class="buttonsOp">C</div>
-            <div class="buttons">0</div>
-            <div class="buttonsOp">,</div>
-            <div class="buttonsOp">&#45;</div>
-            <div class="buttonsTogether">&#61;</div>
-            <div class="buttonsOp">&#43;</div>
-        </div>
-    </div>
+            <div id="b7" class="buttons" onclick="addNumber(7)">7</div>
+            <div id="b8" class="buttons" onclick="addNumber(8)">8</div>
+            <div id="b9" class="buttons" onclick="addNumber(9)">9</div>
+            <div id="bDel" class="buttonsOp" onclick="delDigito()">&#9003;</div>
 
+            <div id="b4" class="buttons" onclick="addNumber(4)">4</div>
+            <div id="b5" class="buttons" onclick="addNumber(5)">5</div>
+            <div id="b6" class="buttons" onclick="addNumber(6)">6</div>
+            <div id="bDiv" class="buttonsOp" onclick="addOp('&divide;')">&divide;</div>
+
+            <div id="b1" class="buttons" onclick="addNumber(1)">1</div>
+            <div id="b2" class="buttons" onclick="addNumber(2)">2</div>
+            <div id="b3" class="buttons" onclick="addNumber(3)">3</div>
+            <div id="bMult" class="buttonsOp" onclick="addOp('&times;')">&times;</div>
+
+            <div id="bC" class="buttonsOp" onclick="clearScreen()">C</div>
+            <div id="b0" class="buttons" onclick="addNumber(0)">0</div>
+            <div id="bPoint" class="buttonsOp" onclick="addPoint(',')">,</div>
+            <div id="bSub" class="buttonsOp" onclick="addOp('&#45;')">&#45;</div>
+
+            <div id="bEqual" class="buttonsTogether" onclick="result()">&#61;</div>
+
+            <div id="bPlus" class="buttonsOp" onclick="addOp('&#43;')">&#43;</div>
+        </div>
+
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
