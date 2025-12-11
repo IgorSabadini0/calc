@@ -1,20 +1,27 @@
+body {
+    background-color: #012326;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .bodyCalc {
     align-items: top;
     justify-content: center;
     margin: 0 auto;
-    border: 3px solid pink;
+    border: 3px solid #044040;
     border-radius: 23px;
     width: 450px;
     height: 650px;
+    background-color: #449CA6;
 }
 
 .titleCalc {
+    background-color: #400101;
+    color: #F2F2F2;
     display: flex;
-    padding: 10px;
-    border: 2.5px solid orange;
-    width: 300px;
-    align-items: center;
     justify-content: center;
+    padding: 10px;
+    border: 2.5px solid #044040;
+    width: 300px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -22,5 +29,63 @@
 }
 
 .screen {
+    display: flex;
+    align-items: center;
     border: 1px solid black;
+    border-radius: 12px;
+    width: 400px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+.itensScreen {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.45em;
+    margin: auto 10px;
+}
+
+.gridButtons {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.buttons,
+.buttonsTogether,
+.buttonsOp {
+    background-color: #A0D9D9;
+    font-size: 1.45em;
+    width: 85px;
+    height: 60px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #044040;
+    border-radius: 12px;
+}
+
+.buttonsOp {
+    color: #A60303;
+    font-weight: bold;
+}
+
+.buttonsTogether {
+    margin: 5px auto;
+    width: 95%;
+    grid-column: span 3;
+    color: #A60303;
+    font-weight: bold;
+
+}
+
+.operation,
+.equal {
+    color: rgb(240, 248, 255);
+}
+
+.n1,
+.n2 {
+    color: #292929
 }
