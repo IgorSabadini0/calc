@@ -26,5 +26,7 @@ function addPoint() {
 }
 
 function result() {
-    document.getElementById('itensScreen').innerText = eval(digitos);
+    let resultado = eval(digitos);
+    digitos = String(resultado);
+    document.getElementById('itensScreen').innerText = digitos;
 }
