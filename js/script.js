@@ -22,7 +22,5 @@ function delDigito() {
 }
 
 function result() {
-    if (op === '&#43;') {
-        let valores = digitos.split('+')
-    }
+    document.getElementById('itensScreen').value = eval(digitos);
 }
